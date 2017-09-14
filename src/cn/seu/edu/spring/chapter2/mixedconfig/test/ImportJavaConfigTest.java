@@ -1,6 +1,6 @@
 package cn.seu.edu.spring.chapter2.mixedconfig.test;
 
-import cn.seu.edu.spring.chapter2.xmlconfig.MediaPlayer;
+import cn.seu.edu.spring.chapter2.mixedconfig.MediaPlayer;
 import org.junit.Assert;
 import org.junit.Rule;
 import org.junit.Test;
@@ -27,7 +27,7 @@ public class ImportJavaConfigTest {
     public void play() {
         mediaPlayer.play();
         Assert.assertEquals(
-                "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n",
+                "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles",
                 log.getLog());
     }
 }

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7c0f15cb-e066-45ba-a8c1-4596bec23dd3" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/BlankDisc.java" afterPath="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/BlankDisc.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/SgtPeppers.java" afterPath="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/SgtPeppers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/SoundSystemConfig.java" afterPath="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/SoundSystemConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/test/ImportJavaConfigTest.java" afterPath="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/test/ImportJavaConfigTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/test/ImportXMLConfig.java" afterPath="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/test/ImportXMLConfig.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,8 +34,8 @@
       <file leaf-file-name="CDPlayer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/CDPlayer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+            <state relative-caret-position="270">
+              <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding>
                 <element signature="e#307#308#0" expanded="true" />
                 <element signature="e#353#354#0" expanded="true" />
@@ -42,21 +46,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cdplayer-config.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/XMLS/cdplayer-config.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="64" lean-forward="true" selection-start-line="6" selection-start-column="64" selection-end-line="6" selection-end-column="64" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="BlankDisc.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/BlankDisc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="297">
-              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+            <state relative-caret-position="199">
+              <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -114,10 +108,10 @@
         <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/SgtPeppers.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="297">
-              <caret line="11" column="65" lean-forward="true" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
+              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
               <folding>
                 <element signature="e#296#297#0" expanded="true" />
-                <element signature="e#368#369#0" expanded="true" />
+                <element signature="e#366#367#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -126,8 +120,8 @@
       <file leaf-file-name="SoundSystemConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/SoundSystemConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="297">
+              <caret line="11" column="77" lean-forward="true" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,14 +129,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ImportJavaConfigTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ImportJavaConfigTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/test/ImportJavaConfigTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="135">
+              <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImportXMLConfig.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/test/ImportXMLConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -211,16 +215,16 @@
         <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/autocofig/CDPlayer.java" />
         <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/CompactDisc.java" />
         <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/MediaPlayer.java" />
-        <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/SgtPeppers.java" />
         <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/CDCpnfig.java" />
         <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/XMLS/cd-config.xml" />
         <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/XMLS/cdplayer-config.xml" />
         <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/CDPlayer.java" />
-        <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/BlankDisc.java" />
-        <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/test/ImportXMLConfig.java" />
         <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/CDPlayerConfig.java" />
         <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/SoundSystemConfig.java" />
         <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/test/ImportJavaConfigTest.java" />
+        <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/BlankDisc.java" />
+        <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/SgtPeppers.java" />
+        <option value="$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/test/ImportXMLConfig.java" />
       </list>
     </option>
   </component>
@@ -404,7 +408,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ImportJavaConfigTest">
+  <component name="RunManager" selected="JUnit.ImportXMLConfig">
     <configuration default="false" name="PNameSpaceVlaueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -931,8 +935,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ImportJavaConfigTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ImportXMLConfig" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ImportXMLConfig" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ImportJavaConfigTest" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.CNameSpaceReferenceTest" />
         <item index="3" class="java.lang.String" itemvalue="JUnit.PNameSpaceWithUtilNameSpaceTest" />
         <item index="4" class="java.lang.String" itemvalue="JUnit.PNameSpaceVlaueTest" />
@@ -963,17 +967,11 @@
       <workItem from="1505267732396" duration="8135000" />
       <workItem from="1505300495512" duration="7073000" />
       <workItem from="1505355850488" duration="9075000" />
-      <workItem from="1505377394921" duration="3931000" />
+      <workItem from="1505377394921" duration="6031000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ImportJavaConfigTest - 2017.09.14 at 17h 05m 58s.xml">
-      <configuration name="ImportJavaConfigTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ImportJavaConfigTest - 2017.09.14 at 17h 08m 43s.xml">
-      <configuration name="ImportJavaConfigTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ImportJavaConfigTest - 2017.09.14 at 17h 13m 16s.xml">
       <configuration name="ImportJavaConfigTest" configurationId="JUnit" />
     </history-entry>
@@ -986,21 +984,27 @@
     <history-entry file="ImportJavaConfigTest - 2017.09.14 at 17h 27m 58s.xml">
       <configuration name="ImportJavaConfigTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ImportJavaConfigTest - 2017.09.14 at 21h 23m 58s.xml">
+      <configuration name="ImportJavaConfigTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImportJavaConfigTest - 2017.09.14 at 21h 24m 46s.xml">
+      <configuration name="ImportJavaConfigTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ImportJavaConfigTest - 2017.09.14 at 21h 25m 13s.xml">
+      <configuration name="ImportJavaConfigTest" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="ImportXMLConfig - 2017.09.14 at 17h 19m 21s.xml">
       <configuration name="ImportXMLConfig" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PNameSpaceWithUtilNameSpaceTest - 2017.09.14 at 11h 37m 20s.xml">
-      <configuration name="PNameSpaceWithUtilNameSpaceTest" configurationId="JUnit" />
+    <history-entry file="ImportXMLConfig - 2017.09.14 at 21h 25m 26s.xml">
+      <configuration name="ImportXMLConfig" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="PNameSpaceWithUtilNameSpaceTest - 2017.09.14 at 11h 40m 43s.xml">
-      <configuration name="PNameSpaceWithUtilNameSpaceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="PNameSpaceWithUtilNameSpaceTest - 2017.09.14 at 11h 44m 44s.xml">
-      <configuration name="PNameSpaceWithUtilNameSpaceTest" configurationId="JUnit" />
+    <history-entry file="ImportXMLConfig - 2017.09.14 at 21h 25m 45s.xml">
+      <configuration name="ImportXMLConfig" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38551000" />
+    <option name="totallyTimeSpent" value="40651000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1025,7 +1029,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32946146" sideWeight="0.50416666" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38160676" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38160676" sideWeight="0.49791667" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1419,16 +1423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/test/ImportXMLConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="14" column="29" lean-forward="false" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/XMLS/cd-config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1445,32 +1439,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/BlankDisc.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/SoundSystemConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="297">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/CDPlayer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+          <caret line="11" column="77" lean-forward="true" selection-start-line="11" selection-start-column="77" selection-end-line="11" selection-end-column="77" />
           <folding>
-            <element signature="e#307#308#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#426#427#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/CompactDisc.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1482,14 +1457,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/SgtPeppers.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/BlankDisc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="65" lean-forward="true" selection-start-line="11" selection-start-column="65" selection-end-line="11" selection-end-column="65" />
-          <folding>
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#368#369#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="199">
+          <caret line="20" column="24" lean-forward="true" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1501,6 +1473,19 @@
             <element signature="imports" expanded="true" />
             <element signature="e#299#300#0" expanded="true" />
             <element signature="e#338#339#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/CDPlayer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="e#307#308#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#392#393#0" expanded="true" />
+            <element signature="e#426#427#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1517,23 +1502,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/SoundSystemConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/CompactDisc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="6" lean-forward="true" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="162">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/SgtPeppers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#296#297#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/test/ImportJavaConfigTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        <state relative-caret-position="135">
+          <caret line="20" column="17" lean-forward="true" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cn/seu/edu/spring/chapter2/mixedconfig/test/ImportXMLConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>
