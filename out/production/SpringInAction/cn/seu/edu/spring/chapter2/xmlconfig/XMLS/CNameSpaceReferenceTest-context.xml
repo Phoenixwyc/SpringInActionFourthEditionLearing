@@ -6,7 +6,7 @@
 
     <bean id="compactDisc" class="cn.seu.edu.spring.chapter2.xmlconfig.SgtPeppers"/>
 
-    <bean id="cdPlayer" class="cn.seu.edu.spring.chapter2.xmlconfig.CDPlayer"
+    <bean id="cDPlayer" class="cn.seu.edu.spring.chapter2.xmlconfig.CDPlayer"
           c:compactDisc="compactDisc"/>
 
 </beans>

@@ -14,7 +14,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Created by Administrator on 2017/9/13.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = "")
+@ContextConfiguration(locations = "classpath*:cn/seu/edu/spring/chapter2/xmlconfig/XMLS/CNameSpaceReferenceTest-context.xml")
 public class CNameSpaceReferenceTest {
     @Rule
     public final StandardOutputStreamLog log = new StandardOutputStreamLog();

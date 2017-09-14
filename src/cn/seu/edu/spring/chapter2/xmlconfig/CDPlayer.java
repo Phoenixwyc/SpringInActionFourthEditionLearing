@@ -6,15 +6,15 @@ import org.springframework.beans.factory.annotation.Autowired;
  * Created by Administrator on 2017/9/13.
  */
 public class CDPlayer implements MediaPlayer{
-    private CompactDisc compactDisc;
+    private CompactDisc cd;
 
     @Autowired
-    public CDPlayer(CompactDisc compactDisc) {
-        this.compactDisc = compactDisc;
+    public CDPlayer(CompactDisc cd) {
+        this.cd = cd;
     }
 
     @Override
     public void play() {
-        compactDisc.play();
+        cd.play();
     }
 }

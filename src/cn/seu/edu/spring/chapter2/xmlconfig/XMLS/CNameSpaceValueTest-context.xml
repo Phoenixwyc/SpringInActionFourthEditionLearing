@@ -4,9 +4,11 @@
        xmlns:c="http://www.springframework.org/schema/c"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="compactDisc" class="cn.seu.edu.spring.chapter2.xmlconfig.SgtPeppers"/>
+    <bean id="compactDisc" class="cn.seu.edu.spring.chapter2.xmlconfig.BlankDIsc"
+          c:_0="Sgt. Pepper's Lonely Hearts Club Band"
+          c:_1="The Beatles" />
 
-    <bean id="cDPlayer" class="cn.seu.edu.spring.chapter2.xmlconfig.CDPlayer"
-          c:compactDisc="compactDisc"/>
+    <bean id="cdPlayer" class="cn.seu.edu.spring.chapter2.xmlconfig.CDPlayer"
+          c:_-ref="compactDisc" />
 
 </beans>
