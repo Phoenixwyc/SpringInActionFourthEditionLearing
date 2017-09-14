@@ -15,7 +15,7 @@ import static org.junit.Assert.assertEquals;
  * Created by Administrator on 2017/9/13.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration
+@ContextConfiguration(locations = "/cn/seu/edu/spring/chapter2/xmlconfig/XMLS/PNameSpaceValueTest-context.xml")
 public class PNameSpaceVlaueTest {
     @Rule
     public final StandardOutputStreamLog log = new StandardOutputStreamLog();
@@ -27,20 +27,20 @@ public class PNameSpaceVlaueTest {
     public void play() {
         player.play();
         assertEquals(
-                "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n" +
-                        "-Track: Sgt. Pepper's Lonely Hearts Club Band\n" +
-                        "-Track: With a Little Help from My Friends\n" +
-                        "-Track: Lucy in the Sky with Diamonds\n" +
-                        "-Track: Getting Better\n" +
-                        "-Track: Fixing a Hole\n" +
-                        "-Track: She's Leaving Home\n" +
-                        "-Track: Being for the Benefit of Mr. Kite!\n" +
-                        "-Track: Within You Without You\n" +
-                        "-Track: When I'm Sixty-Four\n" +
-                        "-Track: Lovely Rita\n" +
-                        "-Track: Good Morning Good Morning\n" +
-                        "-Track: Sgt. Pepper's Lonely Hearts Club Band (Reprise)\n" +
-                        "-Track: A Day in the Life\n",
+                "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles" +
+                        "-Track: Sgt. Pepper's Lonely Hearts Club Band" +
+                        "-Track: With a Little Help from My Friends" +
+                        "-Track: Lucy in the Sky with Diamonds" +
+                        "-Track: Getting Better" +
+                        "-Track: Fixing a Hole" +
+                        "-Track: She's Leaving Home" +
+                        "-Track: Being for the Benefit of Mr. Kite!" +
+                        "-Track: Within You Without You" +
+                        "-Track: When I'm Sixty-Four" +
+                        "-Track: Lovely Rita" +
+                        "-Track: Good Morning Good Morning" +
+                        "-Track: Sgt. Pepper's Lonely Hearts Club Band (Reprise)" +
+                        "-Track: A Day in the Life",
                 log.getLog());
     }
 }

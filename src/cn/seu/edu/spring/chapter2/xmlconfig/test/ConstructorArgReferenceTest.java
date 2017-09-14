@@ -15,7 +15,7 @@ import static org.junit.Assert.assertEquals;
  * Created by Administrator on 2017/9/13.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration
+@ContextConfiguration(locations = "/cn/seu/edu/spring/chapter2/xmlconfig/XMLS/ConstructorArgReferenceTest-context.xml")
 public class ConstructorArgReferenceTest {
 
     @Rule
@@ -28,7 +28,7 @@ public class ConstructorArgReferenceTest {
     public void play() {
         player.play();
         assertEquals(
-                "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles\n",
+                "Playing Sgt. Pepper's Lonely Hearts Club Band by The Beatles",
                 log.getLog());
     }
 }
