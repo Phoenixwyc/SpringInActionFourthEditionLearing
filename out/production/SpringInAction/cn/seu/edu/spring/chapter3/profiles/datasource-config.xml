@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jdbs="http://www.springframework.org/schema/jdbc"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/jdbc  http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+                           http://www.springframework.org/schema/jee  http://www.springframework.org/schema/jee/spring-jee.xsd">
+
+    <beans profile="dev">
+        <jdbs:embedded-database id="dataSource" type="H2">
+            <jdbs:script location="/cn/seu/edu/spring/chapter3/profiles/schema.sql"/>
+            <jdbs:script location="/cn/seu/edu/spring/chapter3/profiles/test-data.sql"/>
+        </jdbs:embedded-database>
+    </beans>
+
+    <beans profile="prod">
+        <jee:jndi-lookup id="datasource"
+                         lazy-init="true"
+                         jndi-name="jdbc/myDatabase"
+                         resource-ref="true"
+                         proxy-interface="javax.sql.DataSource"/>
+
+    </beans>
+</beans>

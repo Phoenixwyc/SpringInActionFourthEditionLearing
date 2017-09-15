@@ -1,14 +1,11 @@
 package cn.seu.edu.spring.chapter3.resfun.test;
 
 import cn.seu.edu.spring.chapter3.resfun.MagicConfig;
-import javafx.scene.control.ProgressBar;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Scope;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 

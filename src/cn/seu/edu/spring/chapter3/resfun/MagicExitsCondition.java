@@ -5,8 +5,6 @@ import org.springframework.context.annotation.ConditionContext;
 import org.springframework.core.env.Environment;
 import org.springframework.core.type.AnnotatedTypeMetadata;
 
-import java.util.Properties;
-
 /**
  * Created by Administrator on 2017/9/14.
  */
