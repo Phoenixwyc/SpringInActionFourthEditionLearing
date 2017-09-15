@@ -9,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class MagicConfig {
+
     @Bean
     @Conditional(MagicExitsCondition.class)
     public MagicBean magicBean() {
