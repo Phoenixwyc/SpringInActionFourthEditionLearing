@@ -8,6 +8,7 @@ import java.util.List;
  * Created by Administrator on 2017/9/18.
  */
 public interface SpitterRepository {
+
     long count();
 
     Spitter save(Spitter spitter);

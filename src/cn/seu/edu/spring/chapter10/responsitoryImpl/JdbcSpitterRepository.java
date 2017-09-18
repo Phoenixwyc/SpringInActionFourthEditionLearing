@@ -34,6 +34,7 @@ public class JdbcSpitterRepository implements SpitterRepository {
     @Override
     public Spitter save(Spitter spitter) {
         Long id = spitter.getId();
+        // table中id是自增的，新插入的记录需要先获取id
         if (id == null) {
             long spitterId = insertSpitterAndReturnId(spitter);
             return new Spitter(spitterId, spitter.getUsername(), spitter.getPassword(), spitter.getFullname(), spitter.getEmail(), spitter.isUpdateByEmail());
@@ -80,6 +81,9 @@ public class JdbcSpitterRepository implements SpitterRepository {
 
     private static final class SpitterRowMapper implements RowMapper<Spitter> {
 
+        //Spring 的 RawMapper可以将数据中的每行记录封装成用户定义的类
+        //可以这么理解，table中的每条记录都是一个对象，RowMapper所做的
+        // 就是将记录转换成对象
         @Override
         public Spitter mapRow(ResultSet resultSet, int i) throws SQLException {
             long id = resultSet.getLong("id");
