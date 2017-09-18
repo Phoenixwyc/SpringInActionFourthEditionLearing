@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+    <!-- 使用XML进行引入-->
+    <aop:config>
+        <aop:aspect>
+            <aop:declare-parents types-matching="cn.seu.edu.spring.chapter4.Performance+"
+                                 implement-interface="cn.seu.edu.spring.chapter4.Encoreable"
+                                 default-impl="cn.seu.edu.spring.chapter4.DefaultEncoreable"/>
+        </aop:aspect>
+
+        <aop:aspect>
+            <aop:declare-parents types-matching="cn.seu.edu.spring.chapter4.Performance+"
+                                 implement-interface="cn.seu.edu.spring.chapter4.Encoreable"
+                                 delegate-ref="delegateEncoreable"/>
+        </aop:aspect>
+    </aop:config>
+
+    <bean id="delegateEncoreable" class="cn.seu.edu.spring.chapter4.DefaultEncoreable"/>
+
+
+</beans>
