@@ -13,7 +13,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  * Created by Administrator on 2017/9/17.
  */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes = TrackCounterConfig.class)
+//@ContextConfiguration(classes = TrackCounterConfig.class)
+@ContextConfiguration(locations = "/cn/seu/edu/spring/chapter4/soundsystem/sounsystem-config.xml")
 public class TrackCounterTest {
     @Rule
     public final StandardOutputStreamLog log = new StandardOutputStreamLog();
@@ -22,7 +23,11 @@ public class TrackCounterTest {
     private CompactDisc compactDisc;
 
     @Autowired
-    private TrackCounter trackCounter;
+    // by Annotation Config
+    //private TrackCounter trackCounter;
+
+    //by XML Config
+    private TrackCounterByXML trackCounter;
 
     @Test
     public void testTackCounter() {

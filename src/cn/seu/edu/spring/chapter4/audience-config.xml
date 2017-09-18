@@ -2,13 +2,30 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:aop="http://www.springframework.org/schema/aop"
-       xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-                           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
-                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
-    <aop:aspectj-autoproxy/>
-    <context:component-scan base-package="cn.seu.edu.spring.chapter4"/>
-    <bean class="cn.seu.edu.spring.chapter4.Audience"/>
+                           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="audience" class="cn.seu.edu.spring.chapter4.AudienceByXML"/>
+    <!-- 配置方式1-->
+    <aop:config>
+        <aop:aspect ref="audience">
+            <aop:before pointcut="execution(* cn.seu.edu.spring.chapter4.Performance.performance(..))" method="silence"/>
+            <aop:before pointcut="execution(* cn.seu.edu.spring.chapter4.Performance.performance(..))" method="takeSeat"/>
+            <aop:after-returning pointcut="execution(* cn.seu.edu.spring.chapter4.Performance.performance(..))" method="applause"/>
+            <aop:after-throwing pointcut="execution(* cn.seu.edu.spring.chapter4.Performance.performance(..))" method="demandRefund"/>
+        </aop:aspect>
+    </aop:config>
+
+    <!--配置方式2 -->
+    <aop:config>
+        <aop:aspect ref="audience">
+            <aop:pointcut id="performance" expression="execution(* cn.seu.edu.spring.chapter4.Performance.performance(..))"/>
+            <aop:before  pointcut-ref="performance" method="silence"/>
+            <aop:before pointcut-ref="performance" method="takeSeat"/>
+            <aop:after-returning pointcut-ref="performance" method="applause"/>
+            <aop:after-throwing pointcut-ref="performance" method="demandRefund"/>
+        </aop:aspect>
+    </aop:config>
 
 
 </beans>

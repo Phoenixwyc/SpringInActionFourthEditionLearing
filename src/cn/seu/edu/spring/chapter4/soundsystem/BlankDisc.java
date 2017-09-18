@@ -1,5 +1,6 @@
 package cn.seu.edu.spring.chapter4.soundsystem;
 
+import javax.swing.*;
 import java.util.List;
 
 /**
@@ -11,6 +12,12 @@ public class BlankDisc implements CompactDisc{
     private List<String> tracks;
 
     public BlankDisc() {}
+
+    public BlankDisc(String title, String artist, List<String> tracks) {
+        this.title = title;
+        this.artist = artist;
+        this.tracks = tracks;
+    }
 
     public void setArtist(String artist) {
         this.artist = artist;
