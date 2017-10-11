@@ -1,9 +1,14 @@
-package cn.seu.edu.spring.chapter10.test;
+package cn.seu.edu.spring.chapter11.hibernate4.test;
 
-import cn.seu.edu.spring.chapter10.domain.Spitter;
-import cn.seu.edu.spring.chapter10.jdbc.JdbcConfig;
-import cn.seu.edu.spring.chapter10.responsitoryImpl.JdbcSpitterRepository;
-import org.junit.Assert;
+/**
+ * Created by Administrator on 2017/9/20.
+ */
+import static org.junit.Assert.*;
+
+
+import cn.seu.edu.spring.chapter11.hibernate4.config.RepositoryConfig;
+import cn.seu.edu.spring.chapter11.hibernate4.repository.SpitterRepository;
+import cn.seu.edu.spring.chapter11.hibernate4.domain.Spitter;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,26 +19,24 @@ import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
-/**
- * Created by Administrator on 2017/9/18.
- */
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(classes=JdbcConfig.class)
-public class JdbcSpitterRepositoryTest {
+@ContextConfiguration(classes = RepositoryConfig.class)
+public class SpitterRepositoryTest {
 
     @Autowired
-    JdbcSpitterRepository spitterRepository;
+    SpitterRepository spitterRepository;
 
     @Test
+    @Transactional
     public void count() {
-        Assert.assertEquals(4, spitterRepository.count());
+        assertEquals(4, spitterRepository.count());
     }
 
     @Test
     @Transactional
     public void findAll() {
         List<Spitter> spitters = spitterRepository.findAll();
-        Assert.assertEquals(4, spitters.size());
+        assertEquals(4, spitters.size());
         assertSpitter(0, spitters.get(0));
         assertSpitter(1, spitters.get(1));
         assertSpitter(2, spitters.get(2));
@@ -61,26 +64,13 @@ public class JdbcSpitterRepositoryTest {
     @Test
     @Transactional
     public void save_newSpitter() {
-        Assert.assertEquals(4, spitterRepository.count());
+        assertEquals(4, spitterRepository.count());
         Spitter spitter = new Spitter(null, "newbee", "letmein", "New Bee",
                 "newbee@habuma.com", true);
         Spitter saved = spitterRepository.save(spitter);
-        Assert.assertEquals(5, spitterRepository.count());
+        assertEquals(5, spitterRepository.count());
         assertSpitter(4, saved);
         assertSpitter(4, spitterRepository.findOne(5L));
-    }
-
-    @Test
-    @Transactional
-    public void save_existingSpitter() {
-        Assert.assertEquals(4, spitterRepository.count());
-        Spitter spitter = new Spitter(4L, "arthur", "letmein", "Arthur Names",
-                "arthur@habuma.com", false);
-        Spitter saved = spitterRepository.save(spitter);
-        assertSpitter(5, saved);
-        Assert.assertEquals(4, spitterRepository.count());
-        Spitter updated = spitterRepository.findOne(4L);
-        assertSpitter(5, updated);
     }
 
     private static void assertSpitter(int expectedSpitterIndex, Spitter actual) {
@@ -90,12 +80,12 @@ public class JdbcSpitterRepositoryTest {
     private static void assertSpitter(int expectedSpitterIndex, Spitter actual,
                                       String expectedStatus) {
         Spitter expected = SPITTERS[expectedSpitterIndex];
-        Assert.assertEquals(expected.getId(), actual.getId());
-        Assert.assertEquals(expected.getUsername(), actual.getUsername());
-        Assert.assertEquals(expected.getPassword(), actual.getPassword());
-        Assert.assertEquals(expected.getFullname(), actual.getFullname());
-        Assert.assertEquals(expected.getEmail(), actual.getEmail());
-        Assert.assertEquals(expected.isUpdateByEmail(), actual.isUpdateByEmail());
+        assertEquals(expected.getId(), actual.getId());
+        assertEquals(expected.getUsername(), actual.getUsername());
+        assertEquals(expected.getPassword(), actual.getPassword());
+        assertEquals(expected.getFullName(), actual.getFullName());
+        assertEquals(expected.getEmail(), actual.getEmail());
+        assertEquals(expected.isUpdateByEmail(), actual.isUpdateByEmail());
     }
 
     private static Spitter[] SPITTERS = new Spitter[6];
@@ -118,3 +108,4 @@ public class JdbcSpitterRepositoryTest {
     }
 
 }
+
